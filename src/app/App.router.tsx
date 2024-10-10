@@ -6,7 +6,7 @@ interface IRoute {
 }
 
 const RouterData: IRoute[] = [
-
+    
 ]
 
 const AppRouter: React.FC = () => {
