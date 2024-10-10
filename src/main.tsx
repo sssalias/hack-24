@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { KKAuthProvider } from 'src/processes/auth'
 
 createRoot(document.getElementById('root')!).render(
-  // <KKAuthProvider>
+  <KKAuthProvider>
     <StrictMode>
       <NextUIProvider>
         <BrowserRouter>
@@ -15,5 +15,5 @@ createRoot(document.getElementById('root')!).render(
         </BrowserRouter>
       </NextUIProvider>
     </StrictMode>
-  // </KKAuthProvider>,
+  </KKAuthProvider>
 )

@@ -6,3 +6,5 @@ export const authClient = new Keycloak({
     realm: `${import.meta.env.VITE_REALM}`,
     clientId: `${import.meta.env.VITE_CLIENT_ID}`,
 })
+
+console.log(import.meta.env.VITE_KK_HOST);

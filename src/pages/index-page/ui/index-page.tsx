@@ -21,7 +21,7 @@ const IndexPage: React.FC = () => {
 				<h1 className='font-customFont pt-20 text-benifits text-mainGreen'>
 					Наши преимущества
 				</h1>
-				<div className='flex gap-10 font-customFont text-header text-mainGreen'>
+				<div className='flex gap-10  text-header text-mainGreen'>
 					<article className='flex flex-col items-center px-20 justify-center border-2 max-w-64 rounded-md border-mainGreen '>
 						<img src={peopleIcon} alt='asf' />
 						<span>Поиск</span>

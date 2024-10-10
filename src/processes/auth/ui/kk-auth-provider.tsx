@@ -6,7 +6,7 @@ type Props = {
 }
 const KKAuthProvider: React. FC<Props>= props => {
     return (
-        <ReactKeycloakProvider authClient={authClient}>
+        <ReactKeycloakProvider authClient={authClient} initOptions={{onLoad: 'login-required'}}>
             {props.children}
         </ReactKeycloakProvider>
     )
