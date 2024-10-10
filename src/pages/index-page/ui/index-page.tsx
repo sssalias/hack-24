@@ -7,12 +7,7 @@ import jobIcon from 'src/pages/index-page/ui/job_kchc5f9r4t47 1.svg'
 const IndexPage: React.FC = () => {
 	return (
 		<MainLayout>
-			<div className='flex flex-col justify-center pt-52'>
-				<h1 className='font-customFont text-landing text-mainGreen px-6'>
-					МОЁ ИСКУССТВО!
-				</h1>
-			</div>
-			<div className='flex items-center flex-col pt-36 gap-10'>
+			<div className='flex items-center flex-col pt-18 gap-10'>
 				<h1 className='font-customFont text-landing text-mainGreen pt-6'>
 					МОЁ ИСКУССТВО!
 				</h1>
@@ -23,7 +18,7 @@ const IndexPage: React.FC = () => {
 					Создать
 					<MdKeyboardArrowRight />
 				</Button>
-				<h1 className='font-customFont text-benifits text-mainGreen'>
+				<h1 className='font-customFont pt-20 text-benifits text-mainGreen'>
 					Наши преимущества
 				</h1>
 				<div className='flex gap-10 font-customFont text-header text-mainGreen'>

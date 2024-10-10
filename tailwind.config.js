@@ -19,9 +19,9 @@ export default {
 				customFont: ['CustomFont', 'sans-serif'],
 			},
 			fontSize: {
-				landing: '128px',
-				header: '20px',
-				benifits: '85px',
+				landing: '100px',
+				header: '16px',
+				benifits: '60px',
 			},
 		},
 	},
