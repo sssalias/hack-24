@@ -7,7 +7,7 @@ type Props = {
 const MainLayout: React.FC<Props> = props => {
 	return (
 		<div
-			style={{ backgroundImage: `url(${img})` }}
+			style={{ backgroundImage: `url(${img})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
 			className='bg-mainBlack min-h-screen'
 		>
 			<div className='w-3/5 mx-auto'>
