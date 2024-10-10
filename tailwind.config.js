@@ -14,6 +14,7 @@ export default {
 				mainYellow: '#C5EA1E',
 				mainGreen: '#8EFB21',
 				mainBlack: '#212121',
+				mainGray: '#3E3939',
 			},
 			fontFamily: {
 				customFont: ['CustomFont', 'sans-serif'],
