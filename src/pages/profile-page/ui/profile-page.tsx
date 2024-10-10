@@ -2,6 +2,7 @@ import { Tab, Tabs } from '@nextui-org/react'
 import { ProfileUser } from 'src/entities/profile'
 import { ProfilePosts } from 'src/entities/profile/ui'
 import ProfilePortfolio from 'src/entities/profile/ui/profile-portfolio'
+import ProfileProduct from 'src/entities/profile/ui/profile-product'
 import { MainLayout } from 'src/layout'
 
 const ProfilePage: React.FC = () => {
@@ -19,7 +20,7 @@ const ProfilePage: React.FC = () => {
 		{
 			id: 'services',
 			label: 'Услуги',
-			content: <ProfilePosts />,
+			content: <ProfileProduct />,
 		},
 		{
 			id: 'groups',
