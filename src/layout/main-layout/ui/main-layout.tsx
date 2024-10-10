@@ -5,9 +5,9 @@ type Props = {
 }
 const MainLayout: React. FC<Props>= props => {
     return (
-        <div className='w-full'>
+        <div className='w-3/4 mx-auto'>
             <Header/>
-            <main>
+            <main className='flex flex-col justify-center'>
                 {props.children}
             </main>
         </div>
