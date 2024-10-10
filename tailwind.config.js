@@ -21,6 +21,7 @@ export default {
 			fontSize: {
 				landing: '128px',
 				header: '20px',
+				benifits: '85px',
 			},
 		},
 	},
