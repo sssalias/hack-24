@@ -2,7 +2,7 @@ import { User } from '@nextui-org/user'
 
 const Header: React.FC = () => {
 	return (
-		<header className='py-4'>
+		<header className='py-6'>
 			<div className='flex justify-between items-center text-header text-mainGreen font-roboto'>
 				<div className='flex gap-16 '>
 					<button>LOGO</button>
