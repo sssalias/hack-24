@@ -7,13 +7,11 @@ import jobIcon from 'src/pages/index-page/ui/job_kchc5f9r4t47 1.svg'
 const IndexPage: React.FC = () => {
 	return (
 		<MainLayout>
-<<<<<<< HEAD
 			<div className='flex flex-col justify-center pt-52'>
 				<h1 className='font-customFont text-landing text-mainGreen px-6'>
 					МОЁ ИСКУССТВО!
 				</h1>
-
-=======
+			</div>
 			<div className='flex items-center flex-col pt-36 gap-10'>
 				<h1 className='font-customFont text-landing text-mainGreen pt-6'>
 					МОЁ ИСКУССТВО!
@@ -45,7 +43,6 @@ const IndexPage: React.FC = () => {
 						<span>вакансий</span>
 					</article>
 				</div>
->>>>>>> refs/remotes/origin/main
 			</div>
 		</MainLayout>
 	)
