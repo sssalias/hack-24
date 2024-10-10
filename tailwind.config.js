@@ -26,27 +26,5 @@ export default {
 		},
 	},
 	darkMode: 'class',
-	plugins: [
-		nextui({
-			themes: {
-				light: {
-					// ...
-					colors: {
-						mainYellow: '#C5EA1E',
-						mainGreen: '#8EFB21',
-						mainBlack: '#212121',
-					},
-				},
-				dark: {
-					// ...
-					colors: {
-						mainYellow: '#C5EA1E',
-						mainGreen: '#8EFB21',
-						mainBlack: '#212121',
-					},
-				},
-				// ... custom themes
-			},
-		}),
-	],
+	plugins: [nextui()],
 }
