@@ -1,13 +1,21 @@
+import { User } from '@nextui-org/user'
+
 const Header: React.FC = () => {
 	return (
-		<header>
+		<header className='py-4'>
 			<div className='flex justify-between items-center text-header text-mainGreen font-roboto'>
-				<div className='flex gap-28 '>
+				<div className='flex gap-16 '>
 					<button>LOGO</button>
 					<button>Мои интересы</button>
 					<button>Чаты</button>
 				</div>
-				<button>Профиль</button>
+				<User
+					name='Jane Doe'
+					description='Product Designer'
+					avatarProps={{
+						src: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+					}}
+				/>
 			</div>
 		</header>
 	)
