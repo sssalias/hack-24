@@ -1,9 +1,12 @@
 import { Button, User } from '@nextui-org/react'
+import AddProduct from './AddProduct'
 
 const ProfileProduct: React.FC = () => {
 	return (
 		<div>
-			<div className='py-6 px-8 bg-mainGray rounded-xl '>
+			<div className='flex justify-center items-center'></div>
+			<AddProduct />
+			<div className='py-6 mt-4 px-8 bg-mainGray rounded-xl '>
 				<div className='flex justify-between py-2 text-white'>
 					<p>Создание логотипа</p>
 					<p>2000-10000 руб</p>

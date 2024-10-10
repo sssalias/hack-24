@@ -13,10 +13,12 @@ import img from 'src/entities/profile/ui/Rectangle 45.png'
 import { BiSend } from 'react-icons/bi'
 import coms from 'src/entities/profile/ui/Group 22.svg'
 import like from 'src/entities/profile/ui/Vector.svg'
+import AddPost from './AddPost'
 
 const ProfilePosts: React.FC = () => {
 	return (
 		<div className='flex flex-col mx-auto w-5/6 gap-4 items-center'>
+			<AddPost />
 			<Card className='w-full px-4 bg-[#3E3939]'>
 				<CardHeader className='justify-between text-white'>
 					<User
