@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import { IndexPage } from 'src/pages'
+import { IndexPage, ProfilePage, InterestPage, ChatPage } from 'src/pages'
 
 interface IRoute {
     path: string
@@ -10,6 +10,18 @@ const RouterData: IRoute[] = [
     {
         path: '/',
         page: <IndexPage/>
+    },
+    {
+        path: '/profile',
+        page: <ProfilePage/>
+    },
+    {
+        path: '/interest',
+        page: <InterestPage/>
+    },
+    {
+        path: '/chat',
+        page: <ChatPage/>
     }
 ]
 
