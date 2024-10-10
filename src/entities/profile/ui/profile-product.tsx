@@ -13,7 +13,7 @@ const ProfileProduct: React.FC = () => {
 					Вы ищете уникальный и запоминающийся логотип, который станет визитной
 					карточкой вашего бизнеса? Наша команда профессиональных дизайнеров
 					предлагает услуги по созданию логотипов, которые помогут вам
-					выделиться на фоне конкурентов и выразить суть вашего бренда.
+					выделиться на фоне конкурентов и выразить суть вашего бренда
 				</p>
 				<hr className='border-mainGreen' />
 				<div className='pt-6 justify-between flex'>
@@ -23,7 +23,7 @@ const ProfileProduct: React.FC = () => {
 							src: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
 						}}
 					/>
-					<div className='gap-2 flex'>
+					<div className='gap-2 flex '>
 						<Button size='sm' color='danger'>
 							Удалить
 						</Button>
