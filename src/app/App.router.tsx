@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { IndexPage } from 'src/pages'
 
 interface IRoute {
     path: string
@@ -6,7 +7,10 @@ interface IRoute {
 }
 
 const RouterData: IRoute[] = [
-    
+    {
+        path: '/',
+        page: <IndexPage/>
+    }
 ]
 
 const AppRouter: React.FC = () => {
