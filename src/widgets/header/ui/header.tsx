@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 				<img onClick={() => navigate('/')} src={logo} alt='logo' />
 				<div className='flex gap-16 '>
 					<button onClick={() => navigate('/interest')}>Мои интересы</button>
-					<button onClick={() => navigate('/chats')}>Чаты</button>
+					<button onClick={() => navigate('/chat')}>Чаты</button>
 					<button onClick={() => navigate('/publications')}>Публикации</button>
 				</div>
 				<User

@@ -20,7 +20,7 @@ const InterestPage: React.FC = () => {
 		<MainLayout>
 			<div className='flex flex-col items-center gap-6'>
 				<h1 className='text-mainGreen pt-0 mt-0 text-landing font-customFont flex justify-center'>
-					Мои интересы
+					Все публикации
 				</h1>
 				<input
 					type='text'
