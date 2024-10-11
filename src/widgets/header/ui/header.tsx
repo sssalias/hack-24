@@ -1,10 +1,10 @@
 import { User } from '@nextui-org/user'
-
+import logo from './logo.svg'
 const Header: React.FC = () => {
 	return (
 		<header className='py-6'>
 			<div className='flex justify-between items-center text-header text-mainGreen font-roboto'>
-				<button>LOGO</button>
+				<img src={logo} alt='logo' />
 				<div className='flex gap-16 '>
 					<button>Мои интересы</button>
 					<button>Чаты</button>
