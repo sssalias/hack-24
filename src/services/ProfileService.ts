@@ -1,12 +1,19 @@
 import { makeRequest, Methods } from 'src/shared/api'
 
 class ProfileService {
-    private readonly path = '/profile'
+    private readonly path = '/profiles'
 
     public async getProfle(
         token: string
     ) {
         return await makeRequest(token, Methods.GET, this.path)
+    }
+
+    public async createProfile(
+        token: string,
+        data: any
+    ) {
+        return await makeRequest(token, Methods.POST, this.path, data)
     }
 
 }

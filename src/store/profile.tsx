@@ -24,9 +24,9 @@ export const useProfileStore = create<ProfileState & ProfileActions>()(immer(set
     surname: undefined,
     avatarId: undefined,
     setData: (data) => {
-        
+        set({userId: data.userId})
     },
     updateData: (token) => {
-
+        
     }
 })))
