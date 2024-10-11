@@ -18,10 +18,17 @@ import like from 'src/entities/profile/ui/Vector.svg'
 const InterestPage: React.FC = () => {
 	return (
 		<MainLayout>
-			<div className='flex flex-col items-center gap-20'>
-				<h1 className='text-mainGreen pt-0 mt-0 text-landing font-customFont flex justify-center'>
-					Мои интересы
-				</h1>
+			<div className='flex flex-col items-center gap-10'>
+				<div className='flex flex-col items-center justify-center'>
+					<h1 className='text-mainGreen  text-landing font-customFont '>
+						Мои интересы
+					</h1>
+					<input
+						className='border-2 p-2 max-w-64 text-white bg-transparent border-mainGreen rounded-md'
+						placeholder='Поиск...'
+						type='text'
+					/>
+				</div>
 				<div className='flex flex-col mx-auto w-5/6 gap-4 items-center'>
 					<Card className='w-full px-4 bg-[#3E3939]'>
 						<CardHeader className='justify-between text-white'>
