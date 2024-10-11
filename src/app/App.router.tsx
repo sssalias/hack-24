@@ -27,7 +27,7 @@ const RouterData: IRoute[] = [
 		page: <InterestPage />,
 	},
 	{
-		path: '/chat',
+		path: '/chats',
 		page: <ChatPage />,
 	},
 	{

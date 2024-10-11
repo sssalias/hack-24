@@ -107,7 +107,7 @@ const ProfilePosts: React.FC = () => {
 							color='success'
 							className='flex-grow'
 							classNames={{
-								input: 'border-mainGreen',
+								input: 'border-mainGreen text-white',
 							}}
 						/>
 						<Button
