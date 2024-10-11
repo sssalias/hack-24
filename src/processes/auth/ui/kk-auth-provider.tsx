@@ -4,7 +4,7 @@ import { authClient } from 'src/processes/auth/api'
 type Props = {
     children: React.ReactNode
 }
-const KKAuthProvider: React. FC<Props>= props => {
+const KKAuthProvider: React. FC<Props>= props => {    
     return (
         <ReactKeycloakProvider authClient={authClient} initOptions={{onLoad: 'login-required'}}>
             {props.children}

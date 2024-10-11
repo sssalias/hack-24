@@ -1,10 +1,16 @@
 import { Button } from '@nextui-org/button'
+import { useKeycloak } from '@react-keycloak/web'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { MainLayout } from 'src/layout'
 import groupIcon from 'src/pages/index-page/ui/art_3gs7379yweja 1.svg'
 import peopleIcon from 'src/pages/index-page/ui/group_6buxgnow9trf 1.svg'
 import jobIcon from 'src/pages/index-page/ui/job_kchc5f9r4t47 1.svg'
 const IndexPage: React.FC = () => {
+
+	const {keycloak} = useKeycloak()
+
+    console.log(keycloak.token)
+
 	return (
 		<MainLayout>
 			<div className='flex items-center flex-col pt-18 gap-10'>

@@ -17,6 +17,7 @@
     "@react-keycloak/web": "^3.4.0",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.11.7",
     "immer": "^10.1.1",
     "keycloak-js": "^26.0.0",
