@@ -1,4 +1,5 @@
 import { User } from '@nextui-org/user'
+import { RiVipLine } from 'react-icons/ri'
 import { useNavigate } from 'react-router-dom'
 import logo from './logo.svg'
 import { useProfileStore } from 'src/store/profile'

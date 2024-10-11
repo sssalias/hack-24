@@ -1,3 +1,4 @@
+import { Button } from '@nextui-org/button'
 import { User } from '@nextui-org/user'
 import { useProfileStore } from 'src/store/profile'
 

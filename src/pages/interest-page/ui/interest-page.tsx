@@ -57,17 +57,15 @@ const InterestPage: React.FC = () => {
 
 	return (
 		<MainLayout>
-			<div className='flex flex-col items-center gap-10'>
-				<div className='flex flex-col items-center justify-center'>
-					<h1 className='text-mainGreen  text-landing font-customFont '>
-						Мои интересы
-					</h1>
-					<input
-						className='border-2 p-2 max-w-64 text-white bg-transparent border-mainGreen rounded-md'
-						placeholder='Поиск...'
-						type='text'
-					/>
-				</div>
+			<div className='flex flex-col items-center gap-6'>
+				<h1 className='text-mainGreen pt-0 mt-0 text-landing font-customFont flex justify-center'>
+					Мои интересы
+				</h1>
+				<input
+					type='text'
+					placeholder='Поиск'
+					className='border opacity-50 border-gray-400 rounded-lg p-2 bg-darkGray text-white'
+				/>{' '}
 				<div className='flex flex-col mx-auto w-5/6 gap-4 items-center'>
 					{data
 						.map(el => (
