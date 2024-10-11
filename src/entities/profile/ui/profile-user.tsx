@@ -1,12 +1,15 @@
 import { User } from '@nextui-org/user'
+import { useProfileStore } from 'src/store/profile'
 
 const ProfileUser: React.FC = () => {
+
+	const {name, surname, ava} = useProfileStore()
+
 	return (
 		<User
-			name='Jane Doe'
-			description='Product Designer'
+			name={`${name} ${surname}`}
 			avatarProps={{
-				src: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+				src: ava,
 				size: 'lg',
 			}}
 			classNames={{

@@ -8,7 +8,8 @@ interface ProfileState {
     wantToFind: string[]  | undefined,
     name: string  | undefined,
     surname: string  | undefined,
-    avatarId: string | undefined
+    avatarId: string | undefined,
+    ava?: string
 }
 
 interface ProfileActions {
@@ -23,10 +24,8 @@ export const useProfileStore = create<ProfileState & ProfileActions>()(immer(set
     name: undefined,
     surname: undefined,
     avatarId: undefined,
+    ava: 'https://i.pravatar.cc/150?img=15',
     setData: (data) => {
-        set({userId: data.userId})
-    },
-    updateData: (token) => {
-        
+        set({userId: data.userId, name: data.name, surname: data.surname})
     }
 })))

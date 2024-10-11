@@ -1,25 +1,41 @@
 import { User } from '@nextui-org/user'
 import { useNavigate } from 'react-router-dom'
 import logo from './logo.svg'
+import { useProfileStore } from 'src/store/profile'
 const Header: React.FC = () => {
 	const navigate = useNavigate()
+
+	const {name, surname, ava} = useProfileStore()
+
 	return (
 		<header className='py-6'>
 			<div className='flex justify-between items-center text-header text-mainGreen font-roboto'>
 				<img onClick={() => navigate('/')} src={logo} alt='logo' />
 				<div className='flex gap-16 '>
-					<button onClick={() => navigate('/interest')}>Мои интересы</button>
-					<button onClick={() => navigate('/chats')}>Чаты</button>
-					<button onClick={() => navigate('/publications')}>Публикации</button>
+					{
+						name !== undefined ?
+						<>
+							<button onClick={() => navigate('/interest')}>Мои интересы</button>
+							<button onClick={() => navigate('/chats')}>Чаты</button>
+							<button onClick={() => navigate('/publications')}>Публикации</button>
+						</>
+						:
+						null
+					}
 				</div>
-				<User
+				{
+					name !== undefined ?
+					<User
+					className='cursor-pointer'
 					onClick={() => navigate('/profile')}
-					name='Jane Doe'
-					description='Product Designer'
+					name={`${name} ${surname}`}
 					avatarProps={{
-						src: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+						src: ava,
 					}}
-				/>
+					/>
+					:
+					null
+				}
 			</div>
 		</header>
 	)

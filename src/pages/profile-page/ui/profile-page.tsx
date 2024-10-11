@@ -1,10 +1,14 @@
 import { Tab, Tabs } from '@nextui-org/react'
+import { useKeycloak } from '@react-keycloak/web'
+import { useEffect } from 'react'
 import { ProfileUser } from 'src/entities/profile'
 import { ProfilePosts } from 'src/entities/profile/ui'
 import ProfilePortfolio from 'src/entities/profile/ui/profile-portfolio'
 import ProfileProduct from 'src/entities/profile/ui/profile-product'
 import ProfileFriends from 'src/entities/profile/ui/profileFriends'
 import { MainLayout } from 'src/layout'
+import PostsService from 'src/services/PostsService'
+import { usePostsStore } from 'src/store/posts'
 
 const ProfilePage: React.FC = () => {
 	const tabs = [
@@ -29,6 +33,21 @@ const ProfilePage: React.FC = () => {
 			content: <ProfileFriends />,
 		},
 	]
+
+	const {keycloak} = useKeycloak()
+
+	const {setData} = usePostsStore()
+
+	useEffect(() => {
+		const getPosts = async () => {
+			if (keycloak.token) {
+				const {data} = await PostsService.getPosts(keycloak.token)
+				setData(data)
+			}
+		}
+		getPosts()
+	}, [keycloak.token])
+
 
 	return (
 		<MainLayout>

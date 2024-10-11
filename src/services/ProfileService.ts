@@ -16,6 +16,12 @@ class ProfileService {
         return await makeRequest(token, Methods.POST, this.path, data)
     }
 
+    public async getProfileById(
+        token: string,
+        id: string
+    ) {
+        return await makeRequest(token, Methods.GET, `${this.path}/${id}`)
+    }
 }
 
 export default new ProfileService()

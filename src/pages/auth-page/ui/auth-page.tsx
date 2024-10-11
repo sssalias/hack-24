@@ -4,6 +4,8 @@ import { MainLayout } from 'src/layout'
 import {clsx} from 'clsx'
 import ProfileService from 'src/services/ProfileService'
 import { useKeycloak } from '@react-keycloak/web'
+import { useProfileStore } from 'src/store/profile'
+import { useNavigate } from 'react-router-dom'
 
 const interests = [
     {
@@ -42,7 +44,7 @@ const wants = [
         label: 'Практика'
     }, 
     {
-        key: 'Intership',
+        key: 'Internship',
         label: 'Стажировка'
     },
     {
@@ -66,6 +68,8 @@ const AuthPage: React.FC = () => {
 
     const {keycloak} = useKeycloak()
 
+    const {userId} = useProfileStore()
+
     const [data, setData] = useState({
         name: '',
         surname: '',
@@ -83,6 +87,12 @@ const AuthPage: React.FC = () => {
                 console.log(e)
             }
         }
+    }
+
+    const nav = useNavigate()
+
+    if (userId) {
+        nav('/')
     }
 
     return (
